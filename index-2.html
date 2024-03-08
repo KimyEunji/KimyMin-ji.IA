@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kim Min-ji.IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      text-align: center;
+      background: linear-gradient(to bottom right, #57585a, #151516); /* Fondo degradado */
+    }
+    .header-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.336);
+      color: #ffffff;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    header:hover {
+      background-color: rgba(0, 0, 0, 0.336);
+    }
+    .header-icon {
+      position: relative;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .header-options {
+      display: none;
+      position: absolute;
+      top: calc(100% + 5px);
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.307);
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      z-index: 999;
+      width: 200px;
+    }
+    header:hover .header-options {
+      display: block;
+    }
+    .header-options ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .header-options li {
+      margin-bottom: 5px;
+    }
+    .header-options a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .header-options a:hover {
+      color: #3498db;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.328);
+      color: #ffffff;
+      padding: 10px 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+    .container {
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 0 20px;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.378);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    h1.neon {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ff00ff; /* Neon Pink */
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+      margin-bottom: 0;
+    }
+    .logo-container {
+      margin-top: 20px;
+    }
+    .logo {
+      font-size: 40px;
+      color: #ff00ff; /* Neon Pink */
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-container">
+    <div class="logo-container">
+      <h1 class="neon logo">Kimy Company</h1>
+    </div>
+    <header onclick="toggleHeader()" onmouseleave="hideOptions()">
+      <div class="header-icon">&#9776;</div>
+      <div class="header-options" id="headerOptions">
+        <ul>
+          <li><a href="#informacion_ia" onclick="mostrarInformacion('informacion_ia')">Información de Kim Min-ji.IA</a></li>
+          <li><a href="#informacion_contacto" onclick="mostrarInformacion('informacion_contacto')">Información de Contacto</a></li>
+          <li><a href="#informacion_empresa" onclick="mostrarInformacion('informacion_empresa')">Información de la Empresa</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <div class="button-container">
+    <a href="https://chat.whatsapp.com/EelAwvfIJog9cLnuJKtuy3" class="button">Unirse al Grupo de WhatsApp</a>
+    <a href="tel:+5214732301960" class="button">Contactar con Kim Min-ji.IA</a>
+  </div>
+
+  <div class="container" id="informacion_ia">
+    <h2>Información de Kim Min-ji.IA</h2>
+    <p>Kim Min-ji.IA es un chatbot para WhatsApp inspirado en Discord. Ofrece una experiencia de conversación única y eficiente para satisfacer tus necesidades de comunicación.</p>
+    <p>Con Kimy.IA, puedes automatizar respuestas, gestionar grupos, y mucho más, todo dentro de la plataforma de WhatsApp.</p>
+  </div>
+
+  <div class="container" id="informacion_contacto">
+    <h2>Información de Contacto</h2>
+    <p>Puedes contactarnos a través de los siguientes medios:</p>
+    <ul>
+      <li>Email: <a href="mailto:almazanramoskimeunji@gmail.com">almazanramoskimeunji@gmail.com</a></li>
+      <li>Teléfono: <a href="tel:+52 1 473 230 1960">+52 1 473 230 1960</a></li>
+    </ul>
+  </div>
+
+  <div class="container" id="informacion_empresa">
+    <h2>Información de la Empresa</h2>
+    <p>KimyCompany es una empresa dedicada al desarrollo de soluciones de inteligencia artificial y tecnologías de comunicación innovadoras.</p>
+    <p>Nuestro objetivo es proporcionar herramientas inteligentes y eficientes que simplifiquen la vida de las personas y mejoren la comunicación en línea.</p>
+  </div>
+
+  <footer>
+    <p>Copyright: <span>© <script>document.write(new Date().getFullYear())</script></span> | v6.3 | Created by [KimyCompany]</p>
+</footer>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 150,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#66ff66"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.7,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#66ff66",
+          "opacity": 0.5,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 4,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": true,
+            "rotateX": 3000,
+            "rotateY": 3000
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+
+    let db;
+    const request = window.indexedDB.open('usersDB', 1);
+
+    request.onerror = function(event) {
+      console.log('Database error: ' + event.target.errorCode);
+    };
+
+    request.onsuccess = function(event) {
+      db = event.target.result;
+    };
+
+    request.onupgradeneeded = function(event) {
+      const db = event.target.result;
+      const objectStore = db.createObjectStore('users', { keyPath: 'email' });
+      objectStore.createIndex('email', 'email', { unique: true });
+    };
+
+    async function encrypt(data) {
+      const enc = new TextEncoder();
+      const encoded = enc.encode(data);
+      const key = await crypto.subtle.generateKey(
+        {
+          name: 'AES-GCM',
+          length: 256,
+        },
+        true,
+        ['encrypt', 'decrypt']
+      );
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+      const encrypted = await crypto.subtle.encrypt(
+        {
+          name: 'AES-GCM',
+          iv: iv,
+        },
+        key,
+        encoded
+      );
+      return { encrypted, key, iv };
+    }
+
+    async function decrypt(encryptedData, key, iv) {
+      const dec = new TextDecoder();
+      const decrypted = await crypto.subtle.decrypt(
+        {
+          name: 'AES-GCM',
+          iv: iv,
+        },
+        key,
+        encryptedData
+      );
+      return dec.decode(decrypted);
+    }
+
+    function toggleHeader() {
+      var headerOptions = document.querySelector('.header-options');
+      headerOptions.classList.toggle('show');
+    }
+
+    function mostrarInformacion(id) {
+      var containers = document.querySelectorAll('.container');
+      containers.forEach(function(container) {
+        container.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+      setTimeout(function() {
+        document.getElementById(id).style.display = 'none';
+      }, 20000); // Ocultar la información después de 15sec
+    }
+
+    function hideOptions() {
+      var headerOptions = document.getElementById('headerOptions');
+      setTimeout(function() {
+        headerOptions.classList.remove('show');
+      }, 20000); // Retrasar el ocultar las opciones del header
+    }
+  </script>
+
+</body>
+</html>

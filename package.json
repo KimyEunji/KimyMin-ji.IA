@@ -1,0 +1,28 @@
+{
+  "name": "bot-kimy.ia",
+  "version": "1.0.0",
+  "description": "Chatbot for Whatsapp. By KimyEunji, ©KimyCompany.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "emojic": "^1.1.17",
+    "express": "^4.18.2",
+    "figlet": "^1.7.0",
+    "moment-timezone": "^0.5.45",
+    "natural": "^6.10.4",
+    "openai": "^4.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.7.4",
+    "sqlite3": "^5.1.7",
+    "weather-js": "^2.0.0",
+    "whatsapp-web.js": "^1.23.0",
+    "xterm": "^5.3.0"
+  }
+}

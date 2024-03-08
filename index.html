@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 100%;
+      width: 100%;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, #333333, #000000); /* Gradiente de colores oscuros */
+      z-index: -1;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    form {
+      background: transparent;
+      backdrop-filter: blur(50px);
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      display: block;
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      color: blue; 
+    }
+
+    .btn {
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #1669c1;
+    }
+
+    .toggle {
+      color: blue;
+      cursor: pointer;
+    }
+
+    .confirmation-message {
+      display: none;
+      color: #0f9d58;
+      margin-top: 20px;
+    }
+
+    /* Estilo para el footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Estilo para el campo de contraseña visible */
+    .visible-password {
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      form {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="img/google-icon.png" alt="Google Logo">
+    </div>
+    <!-- Formulario de registro -->
+    <form id="register-form">
+      <input type="text" id="first-name" placeholder="Nombre" required>
+      <input type="text" id="last-name" placeholder="Apellido" required>
+      <input type="email" id="email" placeholder="Correo" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Por favor, introduce un correo válido de Gmail." required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <!-- Nuevo campo para mostrar la contraseña y botón de visualización -->
+      <input type="text" id="visible-password" class="visible-password" placeholder="Contraseña visible" style="display: none;" readonly>
+      <button type="button" onclick="togglePasswordVisibility('password', 'visible-password')">Mostrar Contraseña</button>
+      <button type="submit" class="btn">Registrar</button>
+      <p class="toggle" onclick="toggleForms()">¿Ya tienes cuenta? Inicia sesión</p>
+    </form>
+    <!-- Formulario de inicio de sesión -->
+    <form id="login-form" style="display: none;">
+      <input type="email" id="login-email" placeholder="Correo" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Por favor, introduce un correo válido de Gmail" required>
+      <input type="password" id="login-password" placeholder="Contraseña" required>
+      <!-- Nuevo campo para mostrar la contraseña y botón de visualización -->
+      <input type="text" id="visible-login-password" class="visible-password" placeholder="Contraseña visible" style="display: none;" readonly>
+      <button type="button" onclick="togglePasswordVisibility('login-password', 'visible-login-password')">Mostrar Contraseña</button>
+      <button type="submit" class="btn">Iniciar Sesión</button>
+      <p class="toggle" onclick="toggleForms()">¿No tienes cuenta? Regístrate</p>
+    </form>
+    <div id="confirmation-message" class="confirmation-message">
+      Usuario registrado correctamente.
+    </div>
+  </div>
+
+  <footer>
+      <p>Copyright: <span>© <script>document.write(new Date().getFullYear())</script></span> | v6.3 | Created by [KimyCompany]</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 150,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#66ff66"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.7,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#66ff66",
+          "opacity": 0.5,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 4,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": true,
+            "rotateX": 3000,
+            "rotateY": 3000
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+
+    let db;
+    const request = window.indexedDB.open('usersDB', 1);
+
+    request.onerror = function(event) {
+      console.log('Database error: ' + event.target.errorCode);
+    };
+
+    request.onsuccess = function(event) {
+      db = event.target.result;
+    };
+
+    request.onupgradeneeded = function(event) {
+      const db = event.target.result;
+      const objectStore = db.createObjectStore('users', { keyPath: 'email' });
+      objectStore.createIndex('email', 'email', { unique: true });
+    };
+
+    async function encrypt(data) {
+      const enc = new TextEncoder();
+      const encoded = enc.encode(data);
+      const key = await crypto.subtle.generateKey(
+        {
+          name: 'AES-GCM',
+          length: 256,
+        },
+        true,
+        ['encrypt', 'decrypt']
+      );
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+      const encrypted = await crypto.subtle.encrypt(
+        {
+          name: 'AES-GCM',
+          iv: iv,
+        },
+        key,
+        encoded
+      );
+      return { encrypted, key, iv };
+    }
+
+    async function decrypt(encryptedData, key, iv) {
+      const dec = new TextDecoder();
+      const decrypted = await crypto.subtle.decrypt(
+        {
+          name: 'AES-GCM',
+          iv: iv,
+        },
+        key,
+        encryptedData
+      );
+      return dec.decode(decrypted);
+    }
+
+    // Agregar funciones para mostrar/ocultar la contraseña en el formulario de registro
+    function togglePasswordVisibility(passwordFieldId, visiblePasswordFieldId) {
+      var passwordField = document.getElementById(passwordFieldId);
+      var visiblePasswordField = document.getElementById(visiblePasswordFieldId);
+
+      passwordField.type = (passwordField.type === 'password') ? 'text' : 'password';
+      visiblePasswordField.style.display = (visiblePasswordField.style.display === 'none') ? 'block' : 'none';
+
+      if (visiblePasswordField.style.display === 'block') {
+        visiblePasswordField.value = passwordField.value;
+      }
+    }
+
+    // Función para alternar entre formularios de registro e inicio de sesión
+    function toggleForms() {
+      var registerForm = document.getElementById('register-form');
+      var loginForm = document.getElementById('login-form');
+
+      registerForm.style.display = (registerForm.style.display === 'none') ? 'block' : 'none';
+      loginForm.style.display = (loginForm.style.display === 'none') ? 'block' : 'none';
+
+      // Limpia los campos de ambos formularios al cambiar entre ellos
+      document.getElementById('confirmation-message').style.display = 'none';
+      clearForm('register-form');
+      clearForm('login-form');
+    }
+
+    // Limpia los campos de un formulario
+    function clearForm(formId) {
+      var form = document.getElementById(formId);
+      var inputs = form.getElementsByTagName('input');
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+      }
+    }
+
+    document.getElementById('register-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const encryptedData = await encrypt(password);
+      const transaction = db.transaction(['users'], 'readwrite');
+      const objectStore = transaction.objectStore('users');
+      const request = objectStore.add({ firstName, lastName, email, password: encryptedData });
+      request.onsuccess = function(event) {
+        document.getElementById('confirmation-message').style.display = 'block'; 
+      };
+    });
+
+    document.getElementById('login-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+      const transaction = db.transaction(['users'], 'readonly');
+      const objectStore = transaction.objectStore('users');
+      const request = objectStore.get(email);
+      request.onsuccess = async function(event) {
+        const user = event.target.result;
+        if (user) {
+          const decryptedPassword = await decrypt(user.password.encrypted, user.password.key, user.password.iv);
+          if (password === decryptedPassword) {
+            window.location.href = 'index-2.html'; // Redireccionar al usuario a la página de inicio después de iniciar sesión
+          } else {
+            alert('Contraseña incorrecta');
+          }
+        } else {
+          alert('Usuario no encontrado');
+        }
+      };
+    });
+
+  </script>
+</body>
+</html>
