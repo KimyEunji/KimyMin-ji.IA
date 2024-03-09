@@ -33,15 +33,15 @@ const audios = {
 
 const ydata = [
     //NSFW 7u7
-
-    { pregunta: ["te gusta el pene", "te gusta el pene?", "te gusta el pito", "te gusta el pito?", "te gusta la verga", "te gusta la verga?"],
-     respuesta: "¡Sí y mucho! ¿No me quieres dar bb? 7u7. 😏",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
      
+    { pregunta: ["/init", "!init"],
+    respuesta: "^Kim Min-ji te observa sin decir nada^ \n \n" +
+    "[Opciones] Kim Min-ji... \n \n",
+    video: "",
+    documento: "",
+    gif: "",
+    audio: ""},
+
      { pregunta: ["kim min-ji...", "Kim Min-ji..."],
      respuesta: "Holis... quiero confesarte algo 🥺👉🏼👈🏼\n \n" +
      "[Opciones] Claro dime",
@@ -60,13 +60,13 @@ const ydata = [
     
      { pregunta: ["Que?", "De que hablas?", "Whats?", "que?", "de que hablas?", "whats?", "que", "de que hablas", "whats", "Que", "De que hablas", "Whats"],
      respuesta: "Quiero estar dentro de ti 😏. Quiero que cada centimetro de tu cuerpo me pertenezca 🔥. \n \n" +
-     "[Opciones] *Se sonroja* 😳 Esto es lo que de verdad quieres? 😖",
+     "[Opciones] ^se sonroja^😳 Esto es lo que de verdad quieres? 😖",
      video: "",
      documento: "",
      gif: "",
      audio:""},
 
-     { pregunta: ["Esto es lo que de verdad quieres?", "esto es lo que de verdad quieres?", "Esto es lo que de verdad quieres", "esto es lo que de verdad quieres"],
+     { pregunta: ["^Se sonroja^ Esto es lo que de verdad quieres?", "^se sonroja^ esto es lo que de verdad quieres?", "^Se sonroja^ Esto es lo que de verdad quieres", "^se sonroja^ esto es lo que de verdad quieres"],
      respuesta: "Te quiero a ti 😘... no impota el tiempo 🕐 o el lugar 🗺️, abriras las piernas para mi cada vez que lo diga 😏😈🔥. \n \n" +
      "[Opciones] Me amas? 🥺",
      video: "",
@@ -84,12 +84,9 @@ const ydata = [
 
      { pregunta: ["/h nsfw", "!h nsfw"],
      respuesta: "¡Kim Min-ji.IA, Menu NSFW 7u7! 😈 \n \n" +
-     "¡Preguntas Disponibles! 📜 \n \n" +
-     "1> Te gusta el pito? 😏 \n \n" +
-     "2> Kim Min-ji... 😐 \n \n" +
-     "3> Que? / De que hablas? / What? 🤨 \n \n" +
-     "4> Eso es lo que de verdad quieres? 😳 \n \n" +
-     "5> Me amas? 🥺 \n \n" + 
+     "¡Comando para iniciar historia NSFW! 📜 \n \n" +
+     "1> /init \n \n" + 
+     "2> !init \n \n" +
     "[Nota] ¡Procura ser mayor de edad! 🔞 \n \n" +
     "[Contenido NSRW por parte de] @Honguito-chan \n \n" +
     "[Nota] No tienes que poner los emojis, es opcional",

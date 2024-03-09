@@ -35,7 +35,7 @@ const audios = {
 const zdata = [
         //Fecha y Hora actual
 
-        { pregunta: ["qué fecha es", "cuál es la fecha", "que fecha es", "cual es la fecha", "qué fecha es?", "que fecha es?", "cuál es la fecha?", "cual es la fecha?"],
+        { pregunta: ["/h 12", "!h 12", "qué fecha es", "cuál es la fecha", "que fecha es", "cual es la fecha", "qué fecha es?", "que fecha es?", "cuál es la fecha?", "cual es la fecha?"],
         respuesta: obtenerFecha(),
         imagen: "",
         video: "",
@@ -43,7 +43,7 @@ const zdata = [
         gif: "",
         audio: "" },
    
-       { pregunta: ["qué hora es", "que hora es", "qué hora es?", "que hora es?"],
+       { pregunta: ["/h 13", "!h 13", "qué hora es", "que hora es", "qué hora es?", "que hora es?"],
         respuesta: obtenerHora(),
         imagen: "",
         video: "",

@@ -34,7 +34,7 @@ const audios = {
 //Chat Normalito jeje
 
 const xdata = [
-    { pregunta: ["hola", "holi", "hi", "hello"],
+    { pregunta: ["/h 1", "!h 1", "hola", "holi", "hi", "hello"],
      respuesta: "¡Hola, ¿cómo estás? 😊",
      imagen: "",
      video: "",
@@ -42,15 +42,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-     { pregunta: ["bien. y tu?", "bien. y tu como estas?", "bien. y tu", "Bien. y tu como estas?", "Bien. y tu?", "Bien. y tu", "Bien. Y tu como estas"],
-    respuesta: "¡Estoy bien, gracias por preguntar! Me alegro que estes bien.",
-    imagen: "",
-    video: "",
-    documento: "",
-    gif: "",
-    audio: ""},
-
-    { pregunta: ["cómo estás", "como estas", "cómo estás?", "como estas?"],
+    { pregunta: ["/h 2", "!h 2", "cómo estás", "como estas", "cómo estás?", "como estas?"],
      respuesta: "¡Estoy bien, gracias por preguntar! 😊",
      imagen: "",
      video: "",
@@ -58,7 +50,15 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["cuál es tu nombre", "cual es tu nombre", "cuál es tu nombre?", "cual es tu nombre?", "como te llamas", "como te llamas?"],
+     { pregunta: ["/h 3", "!h 3", "bien, y tu?", "bien, y tu como estas?", "bien, y tu", "Bien, y tu como estas?", "Bien y tu?", "Bien y tu", "Bien Y tu como estas"],
+    respuesta: "¡Estoy bien, gracias por preguntar! Me alegro que estes bien.",
+    imagen: "",
+    video: "",
+    documento: "",
+    gif: "",
+    audio: ""},
+
+    { pregunta: ["/h 4", "!h 4", "cuál es tu nombre", "cual es tu nombre", "cuál es tu nombre?", "cual es tu nombre?", "como te llamas", "como te llamas?"],
      respuesta: "¡Soy Kim Min-ji.IA, un asistente virtual! Mi nombre significa Sabiduria y belleza en Coreano 🤖",
      imagen: "",
      video: "",
@@ -66,7 +66,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["qué es la programación orientada a objetos", "que es la programacion orientada a objetos", "qué es la programación orientada a objetos?", "que es la programacion orientada a objetos?"],
+    { pregunta: ["/h 5", "!h 5", "qué es la programación orientada a objetos", "que es la programacion orientada a objetos", "qué es la programación orientada a objetos?", "que es la programacion orientada a objetos?"],
      respuesta: "¡La programación orientada a objetos es un paradigma de programación que se basa en el concepto de 'objetos' que tienen propiedades y comportamientos! 💻",
      imagen: "",
      video: "",
@@ -74,7 +74,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["cual es la diferencia entre una base de datos relacional y una base de datos no relacional", "cual es la diferencia entre una base de datos relacional y una base de datos no relacional?"],
+    { pregunta: ["/h 6", "!h 6", "cual es la diferencia entre una base de datos relacional y una base de datos no relacional", "cual es la diferencia entre una base de datos relacional y una base de datos no relacional?"],
      respuesta: "¡Una base de datos relacional organiza los datos en tablas relacionadas entre sí, mientras que una base de datos no relacional utiliza diferentes estructuras de datos para almacenar la información! 🗃️",
      imagen: "",
      video: "",
@@ -82,7 +82,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["cuál es el lenguaje de programación más utilizado en el desarrollo web", "cual es el lenguaje de programacion mas utilizado en el desarrollo web", "cuál es el lenguaje de programación mas utilizado en el desarrollo web?", "cual es el lenguaje de programacion mas utilizado en el desarrollo web?"],
+    { pregunta: ["/h 7", "!h 7", "cuál es el lenguaje de programación más utilizado en el desarrollo web", "cual es el lenguaje de programacion mas utilizado en el desarrollo web", "cuál es el lenguaje de programación mas utilizado en el desarrollo web?", "cual es el lenguaje de programacion mas utilizado en el desarrollo web?"],
      respuesta: "¡El lenguaje de programación más utilizado en el desarrollo web es JavaScript! 🌐",
      imagen: "",
      video: "",
@@ -90,7 +90,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["cuál es la diferencia entre un algoritmo y una estructura de datos", "cual es la diferencia entre un algoritmo y una estructura de datos", "cuál es la diferencia entre un algoritmo y una estructura de datos?", "cual es la diferencia entre un algoritmo y una estructura de datos?"],
+    { pregunta: ["/h 8", "!h 8", "cuál es la diferencia entre un algoritmo y una estructura de datos", "cual es la diferencia entre un algoritmo y una estructura de datos", "cuál es la diferencia entre un algoritmo y una estructura de datos?", "cual es la diferencia entre un algoritmo y una estructura de datos?"],
      respuesta: "¡Un algoritmo es un conjunto de instrucciones paso a paso para resolver un problema, mientras que una estructura de datos es una forma de organizar y almacenar datos en la memoria de una computadora! 🔍",
      imagen: "",
      video: "",
@@ -98,7 +98,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["cuál es la diferencia entre inteligencia artificial y aprendizaje automático", "cual es la diferencia entre la inteligencia artificial y aprendizaje automatico", "cuál es la diferencia entre inteligencia artificial y aprendizaje automático?", "cual es la diferencia entre inteligencia artificial y aprendizaje automatico?"],
+    { pregunta: ["/h 9", "!h 9", "cuál es la diferencia entre inteligencia artificial y aprendizaje automático", "cual es la diferencia entre la inteligencia artificial y aprendizaje automatico", "cuál es la diferencia entre inteligencia artificial y aprendizaje automático?", "cual es la diferencia entre inteligencia artificial y aprendizaje automatico?"],
      respuesta: "¡La inteligencia artificial es el campo de estudio que se enfoca en crear sistemas que pueden realizar tareas que requieren inteligencia humana, mientras que el aprendizaje automático es una técnica específica dentro de la inteligencia artificial que se basa en el entrenamiento de modelos a partir de datos! 🤖",
      imagen: "",
      video: "",
@@ -106,7 +106,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["qué es una red neuronal artificial", "que es una red neuronal artificial", "qué es una red neuronal artificial?", "que es una red neuronal artificial?"],
+    { pregunta: ["/h 10", "!h 10", "qué es una red neuronal artificial", "que es una red neuronal artificial", "qué es una red neuronal artificial?", "que es una red neuronal artificial?"],
      respuesta: "¡Una red neuronal artificial es un modelo computacional inspirado en el funcionamiento del cerebro humano, que se utiliza en el campo del aprendizaje automático para resolver problemas complejos! 🧠",
      imagen: "",
      video: "",
@@ -114,7 +114,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["puedes crear un examen de programación difícil", "puedes crear un examen de programacion dificil", "puedes crear un examen de programación difícil?", "puedes crear un examen de programacion dificil?"],
+    { pregunta: ["/h 11", "!h 11", "puedes crear un examen de programación difícil", "puedes crear un examen de programacion dificil", "puedes crear un examen de programación difícil?", "puedes crear un examen de programacion dificil?"],
      respuesta: `¡Claro, puedo ayudarte a crear un examen de programación difícil! Aquí tienes algunos ejemplos de preguntas que podrías incluir:
 
         HTML:
@@ -158,25 +158,41 @@ const xdata = [
      //Menu de Ayuda Chat Normalito
 
     { pregunta: ["/help", "!help"],
-     respuesta: "¡Kim Min-ji.IA, Menu de Ayuda! 📚\n \n" + 
+     respuesta: "¡Kim Min-ji.IA, Menu de Ayuda! 📚\n" +
+     "Ahora puedes poner el comando que se encuentra entre '<>' o escribir la pregunta \n \n" + 
      "¡Lista de Preguntas Disponibles! 📋\n \n" + 
-     "1> Hola 👋\n \n" + 
-     "2> Como estas? 😊\n \n" + 
-     "3> Bien. y tu? 🤗\n \n" +
-     "4> Cual es tu nombre? 🤖\n \n" + 
-     "5> Que es la programacion orientada a objetos? 💻\n \n" + 
-     "6> Cual es la diferencia entre una base de datos relacional y una base de datos no relacional? 🗃️\n \n" + 
-     "7> Cuál es el lenguaje de programación más utilizado en el desarrollo web? 🌐\n \n" + 
-     "8> Cual es la diferencia entre un algoritmo y una estructura de datos? 🔍\n \n" + 
-     "9> Cual es la diferencia entre inteligencia artificial y aprendizaje automatico? 🤖\n \n" + 
-     "10> Que es una red neuronal artificial? 🧠\n \n" + 
-     "11> Puedes crear un examen de programacion dificil? 📝\n \n" + 
-     "12> Que hora es? ⏰\n \n" + 
-     "13> Cual es la fecha? 📅\n \n" + 
+     "1> Hola 👋\n" +
+     "</h 1> <!h 1> \n \n" + 
+     "2> Como estas? 😊\n" +
+     "</h 2> <!h 2> \n \n" + 
+     "3> Bien. y tu? 🤗\n" +
+     "</h 3> <!h 3> \n \n" +
+     "4> Cual es tu nombre? 🤖\n" +
+     "</h 4> <!h 4> \n \n" + 
+     "5> Que es la programacion orientada a objetos? 💻\n" +
+     "</h 5> <!h 5> \n \n" + 
+     "6> Cual es la diferencia entre una base de datos relacional y una base de datos no relacional? 🗃️\n" +
+     "</h 6> <!h 6> \n \n" + 
+     "7> Cuál es el lenguaje de programación más utilizado en el desarrollo web? 🌐\n" +
+     "</h 7> <!h 7> \n \n" + 
+     "8> Cual es la diferencia entre un algoritmo y una estructura de datos? 🔍\n" +
+     "</h 8> <!h 8> \n \n" + 
+     "9> Cual es la diferencia entre inteligencia artificial y aprendizaje automatico? 🤖\n" +
+     "</h 9> <!h 9> \n \n" + 
+     "10> Que es una red neuronal artificial? 🧠\n" +
+     "</h 10> <!h 10> \n \n" + 
+     "11> Puedes crear un examen de programacion dificil? 📝\n" +
+     "</h 11> <!h 11> \n \n" + 
+     "12> Que hora es? ⏰\n" +
+     "</h 12> <!h 12> \n \n" +
+     "13> Cual es la fecha? 📅\n" +
+     "</h 13> <!h 13> \n \n" +
+
      "¡Comandos para NSFW 7u7! 😈\n \n" + 
-     "1> /h nsfw! 🍑\n \n" + 
-     "2> !h nsfw! 🍑\n \n" +
-     "[Nota] No tienes que poner los emojis, es opcional",
+     "1> /h nsfw 🍑\n \n" + 
+     "2> !h nsfw 🍑\n \n" +
+     "[Nota] No tienes que poner los emojis, es opcional" +
+     "Chatbot for Whatsapp. By KimyEunji, ©KimyCompany.",
      imagen: "",
      video: "",
      documento: "",
