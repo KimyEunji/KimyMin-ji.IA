@@ -155,6 +155,88 @@ const xdata = [
      gif: "",
      audio: "" },
 
+     { pregunta: ["/h 14", "!h 14", "Quiero una pizza", "quiero una pizza"],
+     respuesta: "https://mexico.littlecaesars.com/es-mx/ ",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 15", "!h 15", "Quiero Sushi", "quiero sushi"],
+     respuesta: "https://www.ubereats.com/mx/store/kapital-sushi-sur/EIiGg_mNXXGH60qZoR9_sw",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 16", "!h 16", "Quiero ver Yuri", "quiero ver yuri"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 17", "!h 17", "Quiero ver Yaoi", "quiero ver yaoi"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 18", "!h 18", "Quiero ver Hentai", "quiero ver hentai"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 19", "!h 19", "Quiero jugar videojuegos", "quiero jugar videojuegos"],
+     respuesta: "https://www.epicgames.com/site/es-ES/home",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 20", "!h 20", "Quiero ver anime", "quiero ver anime"],
+     respuesta: "https://www.crunchyroll.com/es-es/premium?utm_source=google&utm_medium=paid_cr&utm_campaign=CR-Paid_Google_Web_Conversion_LATAM_MX-CL_Trademark_SVOD&utm_term=crunchyroll&referrer=google_paid_cr_CR-Paid_Google_Web_Conversion_LATAM_MX-CL_Trademark_SVOD&gad_source=1&gclid=CjwKCAjw17qvBhBrEiwA1rU9wydttz4Mzsj3ErACITsCeHpHVjvDHD2DxzVrT7jdLJN7Bqm0JJmQjBoCQWIQAvD_BwE",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 21", "!h 21", "", ""],
+     respuesta: "",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 22", "!h 22", "", ""],
+     respuesta: "",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 23", "!h 23", "", ""],
+     respuesta: "",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     
+
      //Menu de Ayuda Chat Normalito
 
     { pregunta: ["/help", "!help"],
@@ -187,11 +269,25 @@ const xdata = [
      "</h 12> <!h 12> \n \n" +
      "13> Cual es la fecha? 📅\n" +
      "</h 13> <!h 13> \n \n" +
+     "14> Quiero una pizza \n" +
+     "</h 14><!h 14> \n \n" +
+     "15> Quiero Sushi \n" +
+     "</h 15><!h 15> \n \n" +
+     "16> Quiero ver Yuri \n" +
+     "</h 16><!h 16> \n \n" +
+     "17> Quiero ver Yaoi \n" +
+     "</h 17><!h 17> \n \n" +
+     "18> Quiero ver Hentai \n" +
+     "</h 18><!h 18> \n \n" +
+     "19> Quiero jugar videojuegos \n" +
+     "</h 19><!h 19> \n \n" +
+     "20> Quiero ver anime \n" +
+     "</h 20><! 20> \n \n" +
 
      "¡Comandos para NSFW 7u7! 😈\n \n" + 
      "1> /h nsfw 🍑\n \n" + 
      "2> !h nsfw 🍑\n \n" +
-     "[Nota] No tienes que poner los emojis, es opcional" +
+     "[Nota] No tienes que poner los emojis, es opcional \n" +
      "Chatbot for Whatsapp. By KimyEunji, ©KimyCompany.",
      imagen: "",
      video: "",
