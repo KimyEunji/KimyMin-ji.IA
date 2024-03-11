@@ -211,24 +211,24 @@ const xdata = [
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 21", "!h 21", "", ""],
-     respuesta: "",
+     { pregunta: ["/h 21", "!h 21", "Algo Ranbom", "algo random"],
+     respuesta: "https://images.app.goo.gl/vy9tegePuq9cRehU7",
      imagen: "",
      video: "",
      documento: "",
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 22", "!h 22", "", ""],
-     respuesta: "",
+     { pregunta: ["/h 22", "!h 22", "Badi Game Ova", "badi game ova"],
+     respuesta: "https://www.youtube.com/watch?v=Bi6w8gmDXYM&ab_channel=AstromussMusic",
      imagen: "",
      video: "",
      documento: "",
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 23", "!h 23", "", ""],
-     respuesta: "",
+     { pregunta: ["/h 23", "!h 23", "Badi Prioridades", "badi prioriedades"],
+     respuesta: "https://www.youtube.com/watch?v=bRPCBtVaQO0&ab_channel=AstromussMusic",
      imagen: "",
      video: "",
      documento: "",
@@ -283,6 +283,12 @@ const xdata = [
      "</h 19><!h 19> \n \n" +
      "20> Quiero ver anime \n" +
      "</h 20><! 20> \n \n" +
+     "21> Algo Ranbom \n" +
+     "</h 21><! 21> \n \n" +
+     "22> Badi Game Ova \n" +
+     "</h 22><!h 22> \n \n" +
+     "23> Badi Prioridades \n" +
+     "</h 23><!h 23> \n \n" +
 
      "¡Comandos para NSFW 7u7! 😈\n \n" + 
      "1> /h nsfw 🍑\n \n" + 
