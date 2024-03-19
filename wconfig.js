@@ -61,7 +61,8 @@ const wdata = [
      video: "",
      documento: "",
      gif: "",
-     audio: "" }
+     audio: "" },
+     
 ];
 
 module.exports = { wdata, imagenes, videos, documentos, gifs, audios };
