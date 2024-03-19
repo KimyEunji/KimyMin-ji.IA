@@ -34,7 +34,7 @@ const audios = {
 //Chat Normalito jeje
 
 const xdata = [
-    { pregunta: ["/h 1", "!h 1", "hola", "holi", "hi", "hello"],
+    { pregunta: ["/h menu 1", "!h menu 1", "hola", "holi", "hi", "hello"],
      respuesta: "¡Hola, ¿cómo estás? 😊",
      imagen: "",
      video: "",
@@ -42,7 +42,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-    { pregunta: ["/h 2", "!h 2", "cómo estás", "como estas", "cómo estás?", "como estas?"],
+    { pregunta: ["/h menu 2", "!h menu 2", "cómo estás", "como estas", "cómo estás?", "como estas?"],
      respuesta: "¡Estoy bien, gracias por preguntar! 😊",
      imagen: "",
      video: "",
@@ -50,7 +50,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 3", "!h 3", "bien, y tu?", "bien, y tu como estas?", "bien, y tu", "Bien, y tu como estas?", "Bien y tu?", "Bien y tu", "Bien Y tu como estas"],
+     { pregunta: ["/h menu 3", "!h menu 3", "bien, y tu?", "bien, y tu como estas?", "bien, y tu", "Bien, y tu como estas?", "Bien y tu?", "Bien y tu", "Bien Y tu como estas"],
     respuesta: "¡Estoy bien, gracias por preguntar! Me alegro que estes bien.",
     imagen: "",
     video: "",
@@ -58,7 +58,7 @@ const xdata = [
     gif: "",
     audio: ""},
 
-    { pregunta: ["/h 4", "!h 4", "cuál es tu nombre", "cual es tu nombre", "cuál es tu nombre?", "cual es tu nombre?", "como te llamas", "como te llamas?"],
+    { pregunta: ["/h menu 4", "!h 4", "cuál es tu nombre", "cual es tu nombre", "cuál es tu nombre?", "cual es tu nombre?", "como te llamas", "como te llamas?"],
      respuesta: "¡Soy Kim Min-ji.IA, un asistente virtual! Mi nombre significa Sabiduria y belleza en Coreano 🤖",
      imagen: "",
      video: "",
@@ -155,7 +155,7 @@ const xdata = [
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 14", "!h 14", "Quiero una pizza", "quiero una pizza"],
+     { pregunta: ["/h menu 12", "!h menu 12", "Quiero una pizza", "quiero una pizza"],
      respuesta: "https://mexico.littlecaesars.com/es-mx/ ",
      imagen: "",
      video: "",
@@ -171,29 +171,6 @@ const xdata = [
      gif: "",
      audio: "" },
 
-     { pregunta: ["/h 16", "!h 16", "Quiero ver Yuri", "quiero ver yuri"],
-     respuesta: "https://es.novelcool.com/category/Webcomic.html",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
-
-     { pregunta: ["/h 17", "!h 17", "Quiero ver Yaoi", "quiero ver yaoi"],
-     respuesta: "https://es.novelcool.com/category/Webcomic.html",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
-
-     { pregunta: ["/h 18", "!h 18", "Quiero ver Hentai", "quiero ver hentai"],
-     respuesta: "https://es.novelcool.com/category/Webcomic.html",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
 
      { pregunta: ["/h 19", "!h 19", "Quiero jugar videojuegos", "quiero jugar videojuegos"],
      respuesta: "https://www.epicgames.com/site/es-ES/home",
@@ -218,24 +195,6 @@ const xdata = [
      documento: "",
      gif: "",
      audio: "" },
-
-     { pregunta: ["/h 22", "!h 22", "Badi Game Ova", "badi game ova"],
-     respuesta: "https://www.youtube.com/watch?v=Bi6w8gmDXYM&ab_channel=AstromussMusic",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
-
-     { pregunta: ["/h 23", "!h 23", "Badi Prioridades", "badi prioriedades"],
-     respuesta: "https://www.youtube.com/watch?v=bRPCBtVaQO0&ab_channel=AstromussMusic",
-     imagen: "",
-     video: "",
-     documento: "",
-     gif: "",
-     audio: "" },
-
-     
 
      //Menu de Ayuda Chat Normalito
 
@@ -265,34 +224,29 @@ const xdata = [
      "</h 10> <!h 10> \n \n" + 
      "11> Puedes crear un examen de programacion dificil? 📝\n" +
      "</h 11> <!h 11> \n \n" + 
-     "12> Que hora es? ⏰\n" +
-     "</h 12> <!h 12> \n \n" +
-     "13> Cual es la fecha? 📅\n" +
-     "</h 13> <!h 13> \n \n" +
      "14> Quiero una pizza \n" +
      "</h 14><!h 14> \n \n" +
      "15> Quiero Sushi \n" +
      "</h 15><!h 15> \n \n" +
-     "16> Quiero ver Yuri \n" +
-     "</h 16><!h 16> \n \n" +
-     "17> Quiero ver Yaoi \n" +
-     "</h 17><!h 17> \n \n" +
-     "18> Quiero ver Hentai \n" +
-     "</h 18><!h 18> \n \n" +
      "19> Quiero jugar videojuegos \n" +
      "</h 19><!h 19> \n \n" +
      "20> Quiero ver anime \n" +
      "</h 20><! 20> \n \n" +
      "21> Algo Ranbom \n" +
      "</h 21><! 21> \n \n" +
-     "22> Badi Game Ova \n" +
-     "</h 22><!h 22> \n \n" +
-     "23> Badi Prioridades \n" +
-     "</h 23><!h 23> \n \n" +
 
      "¡Comandos para NSFW 7u7! 😈\n \n" + 
      "1> /h nsfw 🍑\n \n" + 
      "2> !h nsfw 🍑\n \n" +
+
+    "!Comandos de fecha y hora ⏰ 🗓 \n \n" +
+    "1> /h date ⏰ 🗓\n \n" +
+    "2> !h date ⏰ 🗓\n \n" + 
+
+     "!Comandos para musica 🎶\n \n" +
+     "1> /h music 🎶 \n \n" +
+     "2> !music 🎶 \n \n" +
+
      "[Nota] No tienes que poner los emojis, es opcional \n" +
      "Chatbot for Whatsapp. By KimyEunji, ©KimyCompany.",
      imagen: "",

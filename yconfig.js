@@ -33,6 +33,30 @@ const audios = {
 
 const ydata = [
     //NSFW 7u7
+
+    { pregunta: ["/h 16", "!h 16", "Quiero ver Yuri", "quiero ver yuri"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 17", "!h 17", "Quiero ver Yaoi", "quiero ver yaoi"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
+
+     { pregunta: ["/h 18", "!h 18", "Quiero ver Hentai", "quiero ver hentai"],
+     respuesta: "https://es.novelcool.com/category/Webcomic.html",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" },
      
     { pregunta: ["/init", "!init"],
     respuesta: "^Kim Min-ji te observa sin decir nada^ \n \n" +
@@ -76,7 +100,7 @@ const ydata = [
 
      { pregunta: ["Me amas?", "Me amas", "me amas?", "me amas"],
      respuesta: "Te 😖... amo🥰. Amo la idea de follarte 🥵🔥 hasta el punto de que me dejes seco 🍆💦, amo la idea de hacerte entender que comparado con cualquiera 😒, mi verga es muchisimo mejor 😏🍆💦🔥. \n \n" +
-     "[Opciones] proximamente",
+     "[Opciones] (proximamente) ",
      video: "",
      documento: "",
      gif: "",
@@ -87,6 +111,13 @@ const ydata = [
      "¡Comando para iniciar historia NSFW! 📜 \n \n" +
      "1> /init \n \n" + 
      "2> !init \n \n" +
+     "!Contendido NSFW 7u7! 😈 \n \n" +
+     "1> Quiero ver Yuri \n" +
+     "</h 16><!h 16> \n \n" +
+     "2> Quiero ver Yaoi \n" +
+     "</h 17><!h 17> \n \n" +
+     "3> Quiero ver Hentai \n" +
+     "</h 18><!h 18> \n \n" +
     "[Nota] ¡Procura ser mayor de edad! 🔞 \n \n" +
     "[Contenido NSRW por parte de] @Honguito-chan \n \n" +
     "[Nota] No tienes que poner los emojis, es opcional",

@@ -49,7 +49,20 @@ const zdata = [
         video: "",
         documento: "",
         gif: "",
-        audio: "" }
+        audio: "" },
+
+        { pregunta: ["/h date", "!h date"],
+     respuesta: "¡Kim Min-ji.IA, Menu de Fecha y Hora! 🗓 ⏰ \n \n" +
+     "1> Que hora es? ⏰\n" +
+     "</h 12> <!h 12> \n \n" +
+     "2> Cual es la fecha? 🗓\n" +
+     "</h 13> <!h 13> \n \n" +
+    "[Nota] No tienes que poner los emojis, es opcional",
+     imagen: "",
+     video: "",
+     documento: "",
+     gif: "",
+     audio: "" }
 ];
 
 // Función para obtener la fecha actual
